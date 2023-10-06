@@ -1,316 +1,971 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@300;700&display=swap");
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cardo:ital,wght@0,700;1,400&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:ital,wght@0,700;0,800;1,400;1,500;1,600;1,800&family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cardo:ital,wght@0,700;1,400&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:ital,wght@0,700;0,800;1,400;1,500;1,600;1,800&family=Raleway:wght@400;500;600;700;800&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.continer{
+
+    max-width: 1200px;  
+    padding: 0 15px;
+    margin: 0 auto;
+
 }
 
-a {
-  text-decoration: none;
-  display: inline-block;
+/* ......................headimg section start...................  */
+.heading{
+    width: 100%;
+    position: fixed;
+
+}
+.heading .continer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(253, 252, 252 ,0.2);
+    background-color: #3a3e64;
+
+}
+.heading .continer .header-logo img{
+    width: 100%;
+}
+.heading .continer .manu-icone{
+    display: none;
+    font-size: 30px;
+    color: #fff;
+}
+.heading .continer .header-manu .manu-ber{
+    display: flex;
+}
+.heading .continer .header-manu .manu-ber li a{
+    padding: 15px 30px;
+    /* padding-right: 0; */
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.heading .continer .header-manu .manu-ber li:last-child a{
+   padding-right: 0;
 }
 
-ul li {
-  list-style-type: none;
+
+/* ..............................heading section end.....................  */
+/* ................................banner section start....................  */
+.banner{
+    width: 100%;
+    background-image: url(./img/backgroundimg.png);
+    background-color: #3a3e64;
+}
+.banner .continer{
+    
+    padding-top: 256px;
+    padding-bottom: 154px;
+   
+}
+.banner .continer h1{
+    font-size: 65px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 0 114px;
+    line-height: 65px;
+}
+.banner .continer p{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    margin-top: 44px;
+    padding: 0 125px;
+    line-height: 24px;
+    margin-bottom: 77px;
+}
+.banner .continer a{
+    padding: 18px 60px;
+    background-color: #e84545;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 4px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color: #fff;
+}
+/* ..........................banner section end.....................  */
+
+
+/* .............................searvic -section start.................  */
+.searvic-section{
+    /* background-color: #e84545; */
+    padding-top: 120px;
+    padding-bottom: 124px;
+}
+.searvic-section .continer{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-top: 120px;
+    padding-bottom: 124px; */
+    row-gap: 76px;
+    column-gap: 5%;
+}
+.searvic-section .continer .servic-item{
+    width:30%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.searvic-section .continer .servic-item img{
+   width: 100%;
+}
+.searvic-section .continer .servic-item h2{
+    margin-top: 36px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #2d3033;
+}
+.searvic-section .continer .servic-item p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 26px;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+/* ..............................searvic-srction start...............  */
 
-.section-1 {
-  width: 100%;
-  height: 100px;
-  position: fixed;
- background-color: #2F324C;
+/* .........................gallery-section start..........................  */
+.main-gallery-section{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1px;
+    row-gap: 1px;
+
+}
+.main-gallery-section .gallery-section{
+   max-width: calc(25% - 1px);
+   /* max-height: 330px; */
+   cursor: pointer;
+   position: relative;
+   
+}
+.main-gallery-section .gallery-section img{
+    width: 100%;
+    height: 100%;
+
+}
+.main-gallery-section .gallery-section .color{
+    height: 100%;
+    width: 100%;
+    /* background-color: #e84545; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.4s all ease-in-out;
+}
+.main-gallery-section .gallery-section:hover .color{
+    background-color: rgba(231, 68, 68,0.8);
   
 }
+.hover-writing{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    transition: 0.4s;
+}
+.main-gallery-section .gallery-section .hover-writing h2{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.main-gallery-section .gallery-section .hover-writing p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
 
-.section-1 .container {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.main-gallery-section .gallery-section:hover .hover-writing{
+    visibility: visible;
+}
+/* ......................................gallery-section end..................  */
+
+
+/* ................................team-section start.......................  */
+
+.team-section{
+    width: 100%;
+    /* background-color: #e84545; */
+}
+.team-section .continer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 60px;
+
+}
+.team-section .continer .img{
+    width: 23%;
+}
+.team-section .continer .img img{
+    width: 100%;
+}
+
+.team-section .continer h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #aeaeaf;
+    margin-top: 30px;
+}
+.team-section .continer h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #f49595;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.team-section .continer p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #72787e;
+    padding-right: 25px;
+}
+.team-section .continer .font-awesome .fa-brands{
+    padding: 10px 15px;
+    border: 1px solid #72787e;
+    font-size: 30px;
+    color: #72787e;
+    
+}
+.team-section .continer .font-awesome{
+    margin-top: 53px;
+    margin-bottom: 100px;
+}
+
+
+/* ........................team-section-end.................  */
+
+/* ...................testmonial-section start................... */
+
+
+.testmonial-section .control{
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: #53354a;
+}
+.testmonial-section .writing h2{
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 42px;
+    color: #fff;
+}
+.testmonial-section .control .img{
+   max-width: 50%;
+ 
+}
+.testmonial-section .control .imgdiv img{
+   /* height: 100px; */
+    width: 100%;
+}
+.testmonial-section .control .writing{ 
+   max-width: 50%;
+   padding-top: 80px;
+   padding-left: 80px;
+   /* padding-right: 150px; */
   
 }
-
-.menu .menu-item {
-  display: flex;
+.testmonial-section .control .writing p{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #fff;
 }
 
-.menu .menu-item a {
-  color: #fff;
-  padding: 15px 30px;
-  font-size: 13px;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  
-
+.dot{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50%;
+    
+}
+.dot .dottead{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: #5a5858; 
+    transition: 0.3s ease-in-out;
+}
+ 
+.dot .dottead:hover{
+    background-color: #fff;
 }
 
-.menu .menu-item li:last-child a {
-  padding-right: 0;
+/* ...........................testmonial-section-end..............  */
+
+/* ................... download-section start.................  */
+
+
+.download-section{
+    width: 100%;
+    /* background-color: #cb2b9b; */
+}
+.download-section .continer{
+    /* background-color: #3470ac; */
+    padding-top: 97px;
+}
+.download-section .continer h2{
+    font-size: 28px;
+    font-weight: light;
+    color: #343537;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+.download-section .continer h3{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 22px;
+    color: #2d3033;
+    text-transform: uppercase;
+}
+.download-section .continer a{
+    padding: 20px 83px;
+    background-color: #e84545;
+    border-radius: 4px;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+/* ......................download-section end.................  */
+
+/* ........................location-section start...................  */
+
+.location-section{
+    background-color: #3a3e64;
+}
+.location-section .full-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 100px;
+   
 }
 
-/* -----------------------------header section end-------------------------- */
-.section-2 {
-  background-image: url("./images/regtangle-1.png");
-  background-size: cover;
-  background-color: #2F324C;
-  padding: 254px 0 160px 0;
+.location-section .full-section .location h2{
+      font-size: 14px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      text-align: center;
+      /* padding-right: 400px; */
+      
+}
+.location-section .full-section .location p{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #757893;
+    text-align: center;
+}
+.location-section .full-section .location{
+   width: 30%;
+}
+.location-section .full-section .location1 p{
+    padding-left: 50px;
+}
+.location-section .full-section .location3 p{
+    text-align: center; 
+}
+.font-awesomeimg .fa-brands{
+    font-size: 30px;
+    padding: 15px 15px;
+    border: 2px solid #fff; 
+    color: #fff;
+    
+}
+.font-awesomeimg{
+    text-align: center;
 }
 
-.section-2 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* .......................location-section end..................  */
+
+/* ..........................lestpara staet.....................  */
+
+.lest-para{
+    width: 100%;
+    background-color: #313454;
+}
+.lest-para .continer{
+    background-color: #313454;
+    padding: 29px 420px;
+}
+.lest-para .continer p{
+    text-align: center;
+    font-size: 14px;
+    font-family:  'Raleway', sans-serif;
+    color: #666871;
+}
+/* ........................ lest para end..................  */
+
+
+
+/* .........................responsive start........................... ..................... */
+
+
+/* ........................header-section-responsive-start...................  */
+    @media screen and (max-width: 970px){
+        .header-manu{
+            display: none;
+        }
+        .header-manu.Active{
+            display: inline-block;
+        }
+        .heading .continer .header-manu .manu-ber{
+            flex-direction: column;
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+        .heading .continer .header-manu .manu-ber li a{
+            color: rgb(68, 247, 172);
+            margin-top: 15px;
+        }
+        .heading .continer .manu-icone{
+            display: inline-block;
+        }
+    }
+    @media screen and (max-width: 560px){
+        .heading .continer .header-logo img{
+            width: 80%;
+        }
+        .heading .continer{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }  
+    }
+    @media screen and (max-width: 380px){
+    .heading .continer .header-logo img{
+        width: 70%;
+    }
+    .heading .continer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .banner .continer a{
+        padding: 15px 25px;
+ }
+}
+/* .............................header-section-responsive-end....................  */
+
+/* ...........................banner-section-responsive-start.................  */
+@media screen and (max-width: 860px){
+    .banner .continer h1{
+        font-size: 50px;
+        padding: 0 90px;
+        line-height: 55px;
+    }
+    .banner .continer p{
+       
+        font-size: 22px;
+        padding: 0 115px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+}
+/* ................................banner-section-responsive-end....................  */
+
+/* .........................banner-section-responsive-start.................  */
+
+@media screen and (max-width: 785px){
+    .banner .continer h1{
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .banner .continer p{
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+}
+/* ..............................banner-section-responsive-end......................  */
+ 
+/* .............................banner-section-responsive-start.....................  */
+
+@media screen and (max-width: 660px){
+    .banner .continer{
+        padding-top: 170px;
+        padding-bottom: 80px;
+    } 
+    .banner .continer h1{
+        font-size: 40px;
+        padding: 0 70px;
+        line-height: 42px;
+    }
+    .banner .continer p{
+        font-size: 15px;
+        padding: 0 80px;
+        line-height: 17px;
+        margin-bottom: 40px;
+    }
+    .banner .continer a{
+        padding: 15px 30px;
+ }
+}
+/* ................................ banner-section-responsive-end..................  */
+
+/* ...............................banner-section-responsive-start....................  */
+@media screen and (max-width: 560px){
+    .banner .continer h1{
+        font-size: 30px;
+        padding: 0 70px;
+        line-height: 35px;
+    }
+    .banner .continer p{
+        font-size: 15px;
+        padding: 0 60px;
+        line-height: 16px;
+        margin-bottom: 45px;
+    }
+}
+/* ............................banner-section-responsive-end..............  */
+/* ...............................banner-section-responsive-start....................  */
+@media screen and (max-width: 460px){
+    .banner .continer h1{
+        padding: 0 20px;
+       
+    }
+    .banner .continer p{
+        padding: 0 30px;
+    }
 }
 
-.section-2 .container h2 {
-  font-size: 65px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 70px;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  padding: 0 150px;
+/* ...............................banner-section-responsive-end.......................  */
+/* ...........................banner-section-responsive-start...............  */
+
+@media screen and (max-width: 380px){
+    .banner .continer h1{
+        font-size: 20px;
+        padding: 0 30px;
+        line-height: 27px;
+    }
+    .banner .continer p{
+        font-size: 15px;
+        padding: 0 30px;
+        line-height: 16px;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 355px){
+    .banner .continer h1{
+        padding: 0 10px;
+    }
+    .banner .continer p{
+        padding: 0 10px;
+    }
+}
+/* ..............................banner-section-responsive-end..................  */
+
+/* .......................searvic-section-start.....................  */
+@media screen and (max-width: 900px){
+    .searvic-section .continer .servic-item p{
+        padding: 0 16px;
+    }
+}
+/* ........................searvic-section-end.............................  */
+/* ...........................searvic-section-start......................  */
+@media screen and (max-width: 800px){
+    .searvic-section .continer .servic-item img{
+        width: 90%;
+     }
+     .searvic-section .continer .servic-item{
+        width:47%;
+    }
+}
+/* ...........................searvic-section-end....................  */
+/* .............................searvic-section-start..................  */
+@media screen and (max-width: 785px){
+    .searvic-section .continer .servic-item img{
+        width: 80%;
+     }
+     .searvic-section .continer .servic-item{
+        width:47%;
+    }
+}
+/* ............................searvic-section-end................  */
+/* ..............................searvic-section-start..............  */
+@media screen and (max-width: 660px){
+    .searvic-section .continer .servic-item img{
+        width: 70%;
+     }
+     .searvic-section{
+        padding-top: 100px;
+        padding-bottom: 98px;
+    }
+}
+/* .............................searvic-section-end.............  */
+
+/* ..........................searvic-section-start...................  */
+@media screen and (max-width: 480px) {
+    .searvic-section .continer .servic-item{
+        width:100%;
+    }
+    .searvic-section .continer .servic-item img{
+       width: 65%;
+    }
+    .searvic-section .continer .servic-item h2{
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+    .searvic-section{
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+    .searvic-section .continer .servic-item p{
+        padding: 0 15px;
+    }
+}
+/* .......................searvic-section-end..................  */
+
+/* ........................searvic-section-start.....................  */
+@media screen and (max-width: 380px){
+    .searvic-section .continer .servic-item{
+       width:100%;
+   }
+   .searvic-section .continer .servic-item img{
+      width: 50%;
+   }
+   .searvic-section .continer .servic-item h2{
+       margin-top: 24px;
+       margin-bottom: 18px;
+   }
+   .searvic-section{
+       padding-top: 80px;
+       padding-bottom: 70px;
+   }
+   .searvic-section .continer .servic-item p{
+      
+       padding: 0;
+   }
+   .searvic-section .continer{
+       row-gap: 60px; 
+   }
+}
+ /* ...........................searvic-section-end..................    */
+/* ....................gallery-section-start......................  */
+@media screen and (max-width: 900px){
+    .main-gallery-section .gallery-section{
+        max-width: calc(33.33% - 1px);
+     }
+}
+/* .......................gallery-section-end...........................  */
+/* ........................gallery-section-start.....................  */
+@media screen and (max-width: 800px){
+    .main-gallery-section .gallery-section{
+        max-width: calc(50% - 1px);
+     }
+}
+/* ...........................gallery-section-end..................  */
+
+/* ............................gallery-section-start..............  */
+@media screen and (max-width: 480px){
+    .main-gallery-section .gallery-section{
+        max-width: calc(100% - 1px);
+     }
+}
+/* ...............................gallery-section-end.......................  */
+/* ...........................team-section start.......................  */
+@media screen and (max-width: 900px){
+    
+}
+/* ...............................team-section-end........................  */
+/* .............................team-section-start...................  */
+@media screen and (max-width: 860px){
+    .team-section .continer .img{
+        width: 48%;
+    }
+}
+/* ...............................team-section-end......................  */
+
+/* .........................team-section-start................  */
+@media screen and (max-width: 480px){
+    .team-section .continer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 60px;
+
+}
+.team-section .continer .img{
+    width: 100%;
+}
+.team-section .continer .img img{
+    width: 100%;
 }
 
-.section-2 .container p {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  padding: 35px 110px 75px 110px;
+.team-section .continer h2{
+   
+    font-size: 22px;
+   
+    margin-top: 30px;
+}
+.team-section .continer h3{
+    margin-bottom: 20px; 
+}
+.team-section .continer p{
+    padding-right: 0;
+}
+.team-section .continer .font-awesome{
+    margin-top: 33px;
+    margin-bottom: 50px;
+   
+}
+}
+/* ..................team-section-end............  */
+/* .....................testimonial-section-start.................  */
+@media screen and (max-width:1200px){
+    .testmonial-section .control .writing{ 
+        padding-left: 40px;
+     }
+}
+/* .........................testmonial-section-end.........  */
+/* ..........................testmonial-section-start.......................  */
+@media screen and (max-width:1160px){
+    .testmonial-section .writing h2{
+        font-size: 28px;
+       
+    }
+    .testmonial-section .control .writing{ 
+        padding-left: 30px;
+     }
 }
 
-.section-2 .container a {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 400;
-  color: #ffffff;
-  padding: 20px 45px;
-  background-color: #e84545;
-  border-radius: 2px;
-  font-family: "Raleway", sans-serif;
+/* ..........................testmonial-section-end...............  */
+/* ...........................testmonial-section-start...............  */
+@media screen and (max-width:1135px){
+    .testmonial-section .writing h2{
+        font-size: 20px;
+       
+    }
+    .testmonial-section .control .img{
+        max-width: 40%;
+      
+     }
+    .testmonial-section .control .writing{ 
+        max-width: 60%;
+        padding-left: 25px;
+     }
 }
+/* ......................testmonial-section-end.................  */
+/* .......................testmonial-section-start................  */
+@media screen and (max-width:895px){
+    .testmonial-section .control .img{
+        max-width: 30%;
+      
+     }
+    .testmonial-section .control .writing{ 
+        max-width: 70%;
+        padding-left: 20px;
+        padding-top: 50px;
+     }
+}
+/* ...................testmonial-section end...............  */
+/* ........................testmonial-section-start............  */
+@media screen and (max-width:760px){
+    .testmonial-section .control{
+        flex-wrap: wrap;
+    }
+    .testmonial-section .control .img{
+        max-width: 100%;
+     }
+    .testmonial-section .control .writing{ 
+        max-width: 100%;
+        padding-left: 30px;
+        padding-top: 40px;
+     }
+     .dot{
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-bottom: 10px;
+    }
+}
+/* .............................testmonial-section-end.............  */
+/* ....................testmonial-section-start...................  */
+@media screen and (max-width:360px){
+    .testmonial-section .control .writing{ 
+        padding-top: 30px;
+     }
+     .dot{
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-bottom: 10px;
+    }
+}
+/* ....................testmonial-section-end.............  */
+/* ...............download-section start..............  */
+@media screen and (max-width:685px){
+    .download-section .continer h2{
+        font-size: 22px;
+    }
+    .download-section .continer a{
+        padding: 20px 63px;
+       
+    }
+}
+/* ................download-section end..............  */
+@media screen and (max-width:605px){
+    .download-section .continer a{
+        font-size: 14px;
+        padding: 20px 53px; 
+    }
+}
+/* .................download-section end..............  */
+/* ..................download-section start...............  */
+@media screen and (max-width:540px){
+    .download-section .continer a{
+        font-size: 14px;
+        padding: 20px 43px; 
+    }
+}
+/* ..............download-section-end.............  */
+@media screen and (max-width:440px){
+    .download-section .continer{
+        padding-top: 70px;
+    }
+    .download-section .continer a{
+        
+        margin-bottom: 60px;
+       
+    }
+}
+/* .............download-section end.........  */
+/* ...............download-section start.............  */
+@media screen and (max-width:350px){
+    .download-section .continer a{
+        padding: 15px 33px; 
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+}
+/* ......................download-section end...............  */
 
-/* ----------------------section 2 end_______________________ */
-.section-3 {
-  padding: 120px 0;
+/* ........................location-section-start............  */
+ @media screen and (max-width: 670px){
+    .font-awesomeimg .fa-brands{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+  .location-section .full-section .location1 p {
+    padding-left: 20px;
 }
+} 
+/* .....................location-section end..............  */
+/* .....................location-section-start............  */
+ @media screen and (max-width: 490px){
+    .location-section .full-section{
+        padding-top: 50px;
+        padding-bottom: 70px;
+        flex-wrap: wrap;
+    }
+    .location-section .full-section .location{
+        width: 100%;
+     }
+     .location-section .full-section .location h2{
+        margin-bottom: 10px;
+  }
+  .location-section .full-section .location p{
+    font-size: 17px;
+}
+  .font-awesomeimg{
+    margin-bottom: 30px;
+}
+.location-section .full-section .location2 h2{
+   margin-top: 30px;
+}
+.location-section .full-section .location3 p{
+    padding: 0 20px;
+}
+  }
+/* ........................location-section end..........  */
+/* .........................lest-para-start.................  */
+@media screen and (max-width: 1160px){
+.lest-para .continer{
+    padding: 29px 320px;
+}
+}
+/* ....................lest-para-end...............  */
+/* .......................lest-para start..............  */
+@media screen and (max-width: 880px){
+    .lest-para .continer{
+        padding: 29px 220px;
+    }
+    .lest-para .continer p{
+        font-size: 22px;
+    }
+    }
+/* ..................lest-para-end.............  */
 
-.section-3 .container {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 68px;
-  column-gap: 5%;
-}
-
-.section-3 .container .s3-element {
-  max-width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-3 .container .s3-element h2 {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  color: #2d3033;
-  padding: 35px 0 25px 0;
-}
-
-.section-3 .container .s3-element p {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  color: #6c7279;
-  text-align: center;
-}
-
-/* ------------------------section-3 end____________________________ */
-.section-4 {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 1px;
-  row-gap: 1px;
-}
-
-.section-4 .img-gallery {
-  max-width: calc(25% - 1px);
-  max-height: 330px;
-  position: relative;
-}
-
-.section-4 .img-gallery img {
-  width: 100%;
-  height: 100%;
-}
-
-.img-gallery .gallery-overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.section-4 .img-gallery:hover .gallery-overlay {
-  background-color: #e85452;
-  opacity: 0.5;
-  transition: 0.5s all ease-in-out;
-}
-
-.img-gallery .gallery-content {
-  text-align: center;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  z-index: 3;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  color: #fff;
-}
-
-.img-gallery .gallery-content p {
-  padding: 10px 0;
-  text-transform: none;
-}
-
-/* ---------------------------section-4 end------------------------------------- */
-.section-5 .container {
-  display: flex;
-  padding-top: 100px;
-}
-.section-5 .container .s5-img {
-  margin-right: 20px;
-}
-.section-5 .container .s5-img4 {
-  margin-right: 0;
-}
-.section-5 .container h2 {
-  font-size: 22px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  padding-top: 30px;
-  padding-bottom: 15px;
-}
-.section-5 .container h3 {
-  font-size: 13px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  color: #e84545;
-  padding-bottom: 15px;
-}
-.section-5 .container p {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  color: #6c7279;
-  padding-bottom: 30px;
-}
-.s5-img .s5-icon {
-  margin-bottom: 100px;
-}
-/* ------------------------------------------section-5 end-------------------- */
-.section-6 {
-  padding: 0 2rem;
-}
-.section-6 .s6-container {
-  width: 1900px;
-  height: 500px;
-  margin: 0 auto;
-}
-.section-6 .section-6-slider {
-  width: 950px;
-  height: 500px;
-  background-color: #53354a;
-  transform: translateY(-101%) translateX(100%);
-}
-.section-6-slider {
-  padding: 115px 350px 35px 75px;
-}
-.section-6-slider h3 {
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 400;
-  color: #fff;
-}
-.section-6-slider p {
-  font-size: 13px;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  padding-top: 35px;
-}
-/* ------------------section-6 end------------------------- */
-.section-7 .container {
-  text-align: center;
-  padding-bottom: 100px;
-}
-.section-7 .container h2 {
-  font-size: 28px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  padding-top: 100px;
-  padding-bottom: 20px;
-}
-.section-7 .container h3 {
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-bottom: 40px;
-}
-.section-7 .container a {
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  padding: 20px 90px;
-  background-color: #e84545;
-  color: #fff;
-  border-radius: 2px;
-}
-/* ------------------------------section-7 end ------------------ */
-.section-8 {
-  background-color: #3a3e64;
-  padding-top: 70px;
-}
-.section-8 .container {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-.section-8 .container h2 {
-  padding-bottom: 24px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-}
-.section-8 .container p {
-  font-size: 14px;
-  font-weight: 700;
-  color: #a9aab7;
-}
-.section-8 .container:nth-child(2) {
-  margin: 0 30px;
-}
+/* ......................lest-para start.........  */
+@media screen and (max-width: 760px){
+    .lest-para .continer{
+        padding: 29px 120px;
+    }
+    .lest-para .continer p{
+        font-size: 20px;
+    }
+    }
+/* ....................lest-para end..............  */
+/* .................lest-para start..............  */
+@media screen and (max-width: 540px){
+    .lest-para .continer{
+        padding: 19px 50px;
+    }
+    .lest-para .continer p{
+        font-size: 16px;
+    }
+    }
+    /* ................lest-para end..............  */
+/* ..........................respomsive end............................  */
